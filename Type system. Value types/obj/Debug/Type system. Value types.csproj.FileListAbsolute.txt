@@ -1,0 +1,7 @@
+D:\job\ss_projects\2. Type system. Value types\Type system. Value types\Type system. Value types\bin\Debug\Type_system.Value_types.exe.config
+D:\job\ss_projects\2. Type system. Value types\Type system. Value types\Type system. Value types\bin\Debug\Type_system.Value_types.exe
+D:\job\ss_projects\2. Type system. Value types\Type system. Value types\Type system. Value types\bin\Debug\Type_system.Value_types.pdb
+D:\job\ss_projects\2. Type system. Value types\Type system. Value types\Type system. Value types\obj\Debug\Type system. Value types.csprojAssemblyReference.cache
+D:\job\ss_projects\2. Type system. Value types\Type system. Value types\Type system. Value types\obj\Debug\Type system. Value types.csproj.CoreCompileInputs.cache
+D:\job\ss_projects\2. Type system. Value types\Type system. Value types\Type system. Value types\obj\Debug\Type_system.Value_types.exe
+D:\job\ss_projects\2. Type system. Value types\Type system. Value types\Type system. Value types\obj\Debug\Type_system.Value_types.pdb
