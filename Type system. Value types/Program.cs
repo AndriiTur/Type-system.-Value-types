@@ -74,27 +74,28 @@ namespace Type_system.Value_types
             //bool isDay;
             //bool isMonth;
 
-            //Console.Write("Enter day(digit): ");
-            //dayString = Console.ReadLine();
-            //isDay = Int32.TryParse(dayString, out day);
-            //Console.Write("Enter month(digit): ");
-            //monthString = Console.ReadLine();
-            //isMonth = Int32.TryParse(monthString, out month);
-
-            //isMonth = CheckIsMonth(month);
-            //if (isMonth)
+            //try
             //{
-            //    isDay = CheckIsDay(month, day);
+            //    Console.Write("Enter day(digit): ");
+            //    dayString = Console.ReadLine();
+            //    day = Int32.Parse(dayString);
+            //    Console.Write("Enter month(digit): ");
+            //    monthString = Console.ReadLine();
+            //    month = Int32.Parse(monthString);
+            //    isMonth = CheckIsMonth(month);
+            //    if (isMonth)
+            //    {
+            //        isDay = CheckIsDay(month, day);
+            //    }
+            //    Console.Clear();
+
+            //    Console.WriteLine("Entered value day is: {0}", isDay);
+            //    Console.WriteLine("Entered value month is: {0}", isMonth);
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    Console.WriteLine("");
+            //    Console.WriteLine(e.Message);
             //}
-
-            //Console.Clear();
-
-            //Console.WriteLine("Entered value day is: {0}", isDay);
-            //Console.WriteLine("Entered value month is: {0}", isMonth);
 
             //Console.ReadKey();
             #endregion
@@ -106,13 +107,13 @@ namespace Type_system.Value_types
             //int firstDigit;
             //int secondDigit;
 
-            //Console.Write("Enter digit: ");
-            //digitString = Console.ReadLine();
-            //index = digitString.IndexOf('.');
-            //bool isDigit = double.TryParse(digitString, out digit);
-
-            //if (isDigit)
+            //try
             //{
+            //    Console.Write("Enter digit: ");
+            //    digitString = Console.ReadLine();
+            //    index = digitString.IndexOf('.');
+            //    digit = double.Parse(digitString);
+
             //    int val = (int)digit;
             //    double fract = digit - val;
 
@@ -127,9 +128,9 @@ namespace Type_system.Value_types
             //        Console.WriteLine("\nNot enough digits count");
             //    }
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    Console.WriteLine("\nYou entered not correct value");
+            //    Console.WriteLine(e.Message);
             //}
 
             //Console.WriteLine("\nPress any key...");
@@ -141,18 +142,18 @@ namespace Type_system.Value_types
             //string result;
             //int digitValue;
 
-            //Console.Write("Enter digit hour(digit): ");
-            //digitString = Console.ReadLine();
-            //bool isDigit = Int32.TryParse(digitString, out digitValue);
-
-            //if (isDigit)
+            //try
             //{
+            //    Console.Write("Enter digit hour(digit): ");
+            //    digitString = Console.ReadLine();
+            //    digitValue = Int32.Parse(digitString);
+
             //    result = GetMessage(digitValue);
             //    Console.WriteLine($"\n{result}");
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    Console.WriteLine("\nYou enter wrong hour value");
+            //    Console.WriteLine(e.Message);
             //}
 
             //Console.WriteLine("\nPress any key...");
@@ -192,29 +193,29 @@ namespace Type_system.Value_types
             //float secondDigit;
             //float thirdDigit;
 
-            //Console.Write("Enter first digit: ");
-            //firstDigitString = Console.ReadLine();
-            //bool isDigitFV = float.TryParse(firstDigitString, out firstDigit);
-
-            //Console.Write("Enter second digit: ");
-            //secondDigitString = Console.ReadLine();
-            //bool isDigitSV = float.TryParse(firstDigitString, out secondDigit);
-
-            //Console.Write("Enter third digit: ");
-            //thirdDigitString = Console.ReadLine();
-            //bool isDigitTV = float.TryParse(firstDigitString, out thirdDigit);
-
-            //Console.Clear();
-
-            //if (isDigitFV && isDigitSV && isDigitTV)
+            //try
             //{
+            //    Console.Write("Enter first digit: ");
+            //    firstDigitString = Console.ReadLine();
+            //    firstDigit = float.Parse(firstDigitString);
+
+            //    Console.Write("Enter second digit: ");
+            //    secondDigitString = Console.ReadLine();
+            //    secondDigit = float.Parse(firstDigitString);
+
+            //    Console.Write("Enter third digit: ");
+            //    thirdDigitString = Console.ReadLine();
+            //    thirdDigit = float.Parse(firstDigitString);
+
+            //    Console.Clear();
+
             //    WriteResult(firstDigit);
             //    WriteResult(secondDigit);
             //    WriteResult(thirdDigit);
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    Console.WriteLine("\nYou enter wrong values");
+            //    Console.WriteLine(e.Message);
             //}
 
             //Console.WriteLine("\nPress any key...");
@@ -232,22 +233,22 @@ namespace Type_system.Value_types
             //int max;
             //int min;
 
-            //Console.Write("Enter first digit: ");
-            //firstDigitString = Console.ReadLine();
-            //bool isDigitF = Int32.TryParse(firstDigitString, out firstDigit);
-
-            //Console.Write("Enter second digit: ");
-            //secondDigitString = Console.ReadLine();
-            //bool isDigitS = Int32.TryParse(secondDigitString, out secondDigit);
-
-            //Console.Write("Enter third digit: ");
-            //thirdDigitString = Console.ReadLine();
-            //bool isDigitT = Int32.TryParse(thirdDigitString, out thirdDigit);
-
-            //Console.Clear();
-
-            //if (isDigitF && isDigitS && isDigitT)
+            //try
             //{
+            //    Console.Write("Enter first digit: ");
+            //    firstDigitString = Console.ReadLine();
+            //    firstDigit = Int32.Parse(firstDigitString);
+
+            //    Console.Write("Enter second digit: ");
+            //    secondDigitString = Console.ReadLine();
+            //    secondDigit = Int32.Parse(secondDigitString);
+
+            //    Console.Write("Enter third digit: ");
+            //    thirdDigitString = Console.ReadLine();
+            //    thirdDigit = Int32.Parse(thirdDigitString);
+
+            //    Console.Clear();
+
             //    if (firstDigit > secondDigit)
             //    {
             //        if (firstDigit > thirdDigit)
@@ -291,9 +292,9 @@ namespace Type_system.Value_types
             //    Console.WriteLine("Min value = {0}", min);
             //    Console.WriteLine("Max value = {0}", max);
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    Console.WriteLine("\nYou enter wrong values");
+            //    Console.WriteLine(e.Message);
             //}
 
             //Console.WriteLine("\nPress any key...");
@@ -305,25 +306,26 @@ namespace Type_system.Value_types
             //int errCode;
             //bool exists = false;
 
-            //Console.Write("Enter error code(400 - 418): ");
-            //strDigit = Console.ReadLine();
-            //bool isDigit = Int32.TryParse(strDigit, out errCode);
-            //if (isDigit)
+            //try
             //{
+            //    Console.Write("Enter error code(400 - 418): ");
+            //    strDigit = Console.ReadLine();
+            //    errCode = Int32.Parse(strDigit);
             //    exists = Enum.IsDefined(typeof(HTTPError), errCode);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("\nYou enter wrong values");
-            //}
 
-            //if (exists)
-            //{
-            //    Console.WriteLine("\nEnter error code Enum is: \"{0}\"", Enum.GetName(typeof(HTTPError), errCode));
+            //    if (exists)
+            //    {
+            //        Console.WriteLine("\nEnter error code Enum is: \"{0}\"", Enum.GetName(typeof(HTTPError), errCode));
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("\nError:\"This error code no in error list\"");
+            //    }
+
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    Console.WriteLine("\nError:\"This error code no in error list\"");
+            //    Console.WriteLine(e.Message);
             //}
 
             //Console.WriteLine("\nPress any key...");
@@ -336,17 +338,20 @@ namespace Type_system.Value_types
             //myDog.Name = Console.ReadLine();
             //Console.Write("Enter Dog Mark: ");
             //myDog.Mark = Console.ReadLine();
-            //Console.Write("Enter Dog Age: ");
-            //bool isDigit = int.TryParse(Console.ReadLine(), out myDog.Age);
 
-            //if (isDigit)
+            //try
             //{
+            //    Console.Write("Enter Dog Age: ");
+            //    myDog.Age = int.Parse(Console.ReadLine());
+
             //    Console.WriteLine("\n{0}", myDog.ToString());
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    Console.WriteLine("\nYou enter not correct value in age");
+            //    Console.WriteLine(e.Message);
             //}
+
+
 
             //Console.WriteLine("\nPress any key...");
             //Console.ReadKey();
